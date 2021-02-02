@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(32, 86, 151, 0.4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+#app {
+    width: 270px;
+    margin: 3rem 0;
+    background: #506E92;
+    box-shadow: 0 15px 10px -10px rgba(52, 79, 112, 0.75);
+    overflow: hidden;
+}
+
+#app h1 {
+    margin: 0;
+    padding: 0.3rem 1rem;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    color: #6da6cc;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.display {
+    text-align: center;
+    color: #fff;
+}
+
+.display h2 {
+    margin: 2rem 1rem 0.5rem;
+}
+
+.display h5 {
+    position: relative;
+    margin: 0.7rem 1rem 4rem;
+    font-size: 0.85em;
+    color: #96A8BE;
+}
+
+.display h5::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.display .temp {
+    padding: 0 1rem;
+    font-size: 2em;
+}
+
+.display img {
+    width: auto;
+    height: 128px;
+    display: inline-block;
+}
+
+.display .text {
+    margin: 0 0 1.5rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.actions {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.actions .togglSearch {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    color: rgba(150, 168, 190, 0.6);
+    background: #3F6083;
+    transform: translateY(0);
+    transition: color 0.4s, transform 0.4s;
+    cursor: pointer;
+}
+
+.actions .togglSearch.active {
+    transform: translateY(-100%);
+}
+
+.actions .togglSearch:hover,
+.actions .togglSearch:focus {
+    color: #96A8BE;
+}
+
+.actions .panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background: #344F70;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+body {
+    font-family: Arial;
+    font-size: 0.95em;
+    color: #929292;
+}
+
+.report-container {
+    border: #E0E0E0 1px solid;
+    padding: 20px 40px 40px 40px;
+    border-radius: 2px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.weather-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.weather-forecast {
+    color: #212121;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+span.min-temperature {
+    margin-left: 15px;
+    color: #929292;
+}
+
+.time {
+    line-height: 25px;
+}
+
+.actions .panel.active {
+    transform: translateY(0);
+}
+
+.actions .panel input,
+.actions .panel button {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+    outline: none;
+    background: transparent;
+    border: none;
+    transition: color 0.4s;
+    color: rgba(150, 168, 190, 0.4);
+}
+
+.actions .panel input:hover,
+.actions .panel input:focus,
+.actions .panel button:hover,
+.actions .panel button:focus {
+    color: #96A8BE;
+}
+
+.actions .panel input {
+    flex-grow: 2;
+}
+
+.actions .panel button {
+    border-left: 1px solid rgba(150, 168, 190, 0.4);
+    cursor: pointer;
+}
+
+.actions .panel button i {
+    vertical-align: middle;
+}
